@@ -16,7 +16,7 @@ router.post('', async(req,res)=>{
 router.get('', async(req,res)=>{
     try{
         const users=await User.find().lean().exec();
-        return res.status(200).send(users);
+        return res.status(200).json({data:users});
     }catch(err){
         return res.status(500).send(err.message)
     }
