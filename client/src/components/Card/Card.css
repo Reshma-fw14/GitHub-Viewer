@@ -18,12 +18,16 @@
 .card-details{
     width: 70%;
     /* border: 1px solid red; */
-    line-height: 5px;
+    line-height: 10px;
 }
 .card-details>p:nth-child(1){
     font-size: 22px;
     font-weight: 600;
     color: rgb(79, 79, 79);
+}
+._username{
+    font-size: 18px;
+    font-weight: 700;
 }
 .user-details{
     display: flex;

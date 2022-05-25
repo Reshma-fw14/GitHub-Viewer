@@ -1,7 +1,7 @@
 import React from 'react';
 import {Routes, Route} from "react-router-dom"
 import Home from '../Homepage/Home';
-import { UserDetail } from '../Userdetails/detail';
+import { UserDetail } from '../Userdetails/UserDetail';
 
 export default function AllRoutes() {
   return (

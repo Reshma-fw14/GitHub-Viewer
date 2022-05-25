@@ -24,7 +24,7 @@ export default function Card({ single }) {
       </div>
       <div className="card-details">
         <div>
-          <p>{single.userName}</p>
+          <p className="_username">{single.userName}</p>
         </div>
         <div className="user-details handle company">
           <p>
