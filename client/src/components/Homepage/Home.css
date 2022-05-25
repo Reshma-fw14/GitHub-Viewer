@@ -30,6 +30,9 @@
     color: rgb(164, 164, 164);
 }
 /*user*/
+::placeholder{
+    color: white;
+}
 .user_search_bar_container{
     width: 40%;
     border-radius: 4px;
