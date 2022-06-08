@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker News</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+}
+.mainContainer{
+    padding-top: 10px;
+    width: 80%;
+    margin: auto;
+    /* border: 1px solid gray; */
+}
+.detailContainer{
+    width: 95%;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    /* border: 1px solid gray; */
+}
+.top-nav{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+ul{
+    align-items: center;
+    padding: 4px 0 4px 5px;
+    background-color: orangered;
+    display: flex;
+    flex-direction: row;
+   column-gap: 6px;
+   font-weight: bold;
+}
+li{
+    list-style-type: none;
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+}
+ul li:first-child{
+    font-size: 15px;
+}
+
+tr{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+#headLines{
+    font-size: larger;
+}
+#color-change{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div  class="mainContainer" ng-controller="newStoriesCtrl">
+        <div class="detailContainer">
+            <table>
+                <tbody >
+                    <h1>New Stories</h1>
+                    <br>
+                <div class="lines">
+                <h1 id="headLines"></h1>
+                </div>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="./newStories.js"></script>
+</body>
+</html>
