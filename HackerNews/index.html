@@ -89,13 +89,11 @@
               <a ng-href="#!/bestStories" id="bestStories">Best-Stories</a>
             </ul>
           </nav>
-          <div class="detailContainer" ng-view>
+          <div class="detailContainer" >
             <table>
-              <tbody>
-                  <h1>main</h1>
-               <div class="lines">
-                <h1 id="headLines"></h1>
-               </div>
+              <tbody ng-view>
+                <h1>main</h1>
+            
               </tbody>
             </table>
           </div>
@@ -104,6 +102,7 @@
     <script src="./main.js"> </script>
     <script src="./topStories.js"></script>
     <script src="./newStories.js"></script>
-    <script src="./bestStories.js"></script> 
+    <script src="./bestStories.js"></script>
+    <script src="./details.js"></script>
 </body>
 </html>

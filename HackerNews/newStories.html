@@ -65,13 +65,13 @@ tr{
 <body>
     <div  class="mainContainer" ng-controller="newStoriesCtrl">
         <div class="detailContainer">
+            <h1>New Stories</h1>
             <table>
-                <tbody >
-                    <h1>New Stories</h1>
-                    <br>
-                <div class="lines">
-                <h1 id="headLines"></h1>
-                </div>
+                <tbody>
+                    <tr ng-repeat="item in data" id="tr">
+                        <td>{{item.title}}</td>
+                    </tr>
+                   
                 </tbody>
             </table>
         </div>

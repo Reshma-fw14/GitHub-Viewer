@@ -70,9 +70,17 @@
                     <h1>Top Stories</h1>
                     <br>
                 <div class="lines">
-                <h1 id="headLines">
+                   <h1 id="headLines">
                 </h1>
                 </div>
+                <table>
+                    <tbody>
+                        <tr ng-repeat="item in data" id="tr">
+                            <td>{{item.title}}</td>
+                        </tr>
+                       
+                    </tbody>
+                </table>
                 </tbody>
             </table>
         </div>
