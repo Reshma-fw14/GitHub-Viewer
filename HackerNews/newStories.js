@@ -16,10 +16,16 @@ app.controller('newStoriesCtrl', function ($scope, $http) {
                 return $http.get(`https://hacker-news.firebaseio.com/v0/item/${id}.json?`)
                 .then(function(response){
                   $scope.fetchData=response.data;
-                  // console.log("data:",$scope.fetchData)
-                  array.push($scope.fetchData)
-                  $scope.data=array;
-                  // console.log("array:",$scope.data);
+                // console.log("data:",$scope.fetchData)
+                array.push($scope.fetchData);
+                $scope.data=array;
+                $scope.id=id;
+                // console.log("array:",$scope.data);
+
+                $scope.handleClick=function(id){
+                  // console.log('id',id)
+                  localStorage.setItem('id:', id)
+                }
 
                 });
             });

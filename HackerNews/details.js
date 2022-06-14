@@ -1,5 +1,5 @@
-// const id = localStorage.getItem('newsId')
-// // console.log(id)
+// const id = localStorage.getItem('newsId:')
+// console.log(id)
 
 // async function getDetail(id){
 //     try{
@@ -30,11 +30,12 @@
 
 
 
-const id = localStorage.getItem('newsId')
+const id = localStorage.getItem('id:')
 // console.log(id)
 
 app.controller('detailCtrl', function($scope, $http){
    $http.get(`https://hacker-news.firebaseio.com/v0/item/${id}.json?print=pretty`).then(function(response){
-     console.log(response.data)
+    //  console.log(response.data)
+    $scope.data=response.data;
    })
 })

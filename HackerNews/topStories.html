@@ -57,9 +57,6 @@
         #headLines{
             font-size: larger;
         }
-        #color-change{
-            color: white;
-        }
     </style>
 </head>
 <body>
@@ -76,9 +73,11 @@
                 <table>
                     <tbody>
                         <tr ng-repeat="item in data" id="tr">
+                            <td>{{$index+1}}</td>
                             <td>{{item.title}}</td>
+                            <td><a ng-href="#!/details"><button id="details" ng-click="handleClick(item.id)">Details</button></a></td>
+                            <!-- <td><a href="/details/{{item.id}}"><button id="details" ng-click="handleClick(item.id)">Details</button></a></td> -->
                         </tr>
-                       
                     </tbody>
                 </table>
                 </tbody>

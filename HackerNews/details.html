@@ -7,7 +7,7 @@
     <title>Hacker News</title>
     <style>
         #details{
-            width: 50%;
+            width: 80%;
             margin: 30px auto;
             border: 1px dashed gray;
             padding: 15px;
@@ -20,7 +20,9 @@
 <body>
     <h1>Details</h1>
     <div id="details" ng-controller="detailCtrl">
-        <a id='link' href="">Link : </a>
+        <h3>Title : {{data.title}}</h3>
+        <p>By : {{data.by}}</p>
+        <p>Type : {{data.type}}</p>
     </div>
 
     <script src="./details.js"></script>

@@ -59,7 +59,7 @@
         #headLines{
             font-size: larger;
         }
-        .top{
+        #top{
             text-decoration: none;
             color: black;
         }
@@ -82,14 +82,14 @@
             <ul>
               <li class="main-title" id="color-change">HACKER NEWS</li>
               <li>   </li>
-              <a ng-href="#!/topStories" class="top">Top-Stories</a>
+              <a ng-href="#!/topStories" id="top">Top-Stories</a>
               <li> | </li>
               <a ng-href="#!/newStories" id="newStories">New-Stories</a>
               <li> | </li>
               <a ng-href="#!/bestStories" id="bestStories">Best-Stories</a>
             </ul>
           </nav>
-          <div class="detailContainer" >
+          <div class="detailContainer">
             <table>
               <tbody ng-view>
                 <h1>main</h1>
